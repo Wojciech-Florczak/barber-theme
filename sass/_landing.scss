@@ -55,3 +55,84 @@
         }
     }
 }
+#landing-offers {
+    padding: 3rem 1rem;
+    background-color: $black-color;
+    color: white;
+    h1 {
+      text-align: center;  
+      font-size: 2.5rem;
+      padding-bottom: 1.5rem;
+    }
+    p {
+        color: white;
+        &.heading {
+            text-transform: capitalize; 
+            font-size: 1rem;
+        }
+        &.title {
+            font-size: 1.5rem;
+        }
+    }
+    img {
+        max-width: 5rem;
+        max-height: 5rem;
+        padding-bottom: 1rem;
+    }
+}
+#landing-welcome {
+    padding: 3rem 1rem;
+    background-color: white;
+    text-align: center;
+    h1 {
+        font-size: 2.5rem;
+        color: $gold-color;
+    }
+}
+#landing-sm {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1rem;
+    background-color: $gray-color;
+    font-size: 1.7rem;
+    color: white;
+    text-align: center;
+    h1 {
+        padding-right: 1rem;
+    }
+    a {
+        color: $gray-color;
+        background-color: $gold-color;
+        min-width: 2.5rem;
+        border-radius: 50%;
+        margin-right: .75rem;
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+#footer {
+    background-color: $black-color;
+    color: white;
+    text-align: center;
+    h1 {
+        color: $gold-color;
+        font-size: 1.3rem;
+        padding-bottom: .75rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    h3 {
+        padding-bottom: 2rem;
+    }
+    hr {
+        border: 1px solid $gray-color;
+    }
+    .columns {
+        .column {
+            padding: 2rem 2rem;
+        }
+    }
+}
