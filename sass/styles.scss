@@ -46,6 +46,9 @@ body {
 }
 .section {
     @include breakpoint(xs){
-        padding: 1rem;
+        padding: 0rem;
+    }
+    @include breakpoint(sm){
+        padding: 0.3rem;
     }
 }

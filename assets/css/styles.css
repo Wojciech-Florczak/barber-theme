@@ -84,6 +84,9 @@
     text-decoration: none; }
     #landing-sm a:hover {
       text-decoration: none; }
+  @media (max-width: 767px) {
+    #landing-sm {
+      display: block; } }
 
 #footer {
   background-color: #333333;
@@ -143,6 +146,9 @@ body {
 
 @media (max-width: 767px) {
   .section {
-    padding: 1rem; } }
+    padding: 0rem; } }
+@media (min-width: 768px) {
+  .section {
+    padding: 0.3rem; } }
 
 /*# sourceMappingURL=styles.css.map */
