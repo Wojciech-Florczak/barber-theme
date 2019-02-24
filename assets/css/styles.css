@@ -135,8 +135,7 @@ body {
         margin: 0 38% !important; } }
     .navbar .navbar-menu .navbar-item {
       color: white;
-      background-color: #535353;
-      border-right: 1px solid #494848; }
+      background-color: #535353; }
       .navbar .navbar-menu .navbar-item:hover {
         color: #DCB879;
         -webkit-transition: all 0.7s ease;

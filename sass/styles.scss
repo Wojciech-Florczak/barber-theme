@@ -27,7 +27,7 @@ body {
         .navbar-item {
             color: white;
             background-color: $gray-color;
-            border-right: 1px solid #494848;
+            // border-right: 1px solid #494848;
             &:hover {
                 color: $gold-color;
                 @include transition (all, 0.7s, ease)
