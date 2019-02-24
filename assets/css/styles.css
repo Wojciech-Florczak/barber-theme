@@ -15,31 +15,56 @@
 
 #landing-hairs {
   background-color: #BEBEBE; }
-  #landing-hairs .card {
-    background-color: transparent;
-    box-shadow: none; }
-    #landing-hairs .card .card-content {
-      padding: 1rem; }
-      #landing-hairs .card .card-content div h1, #landing-hairs .card .card-content div h2 {
-        color: white; }
-      #landing-hairs .card .card-content div h1 {
-        font-size: 1rem;
-        text-transform: uppercase;
-        border-radius: 5%;
-        background-color: #DCB879;
-        padding: 5px;
-        width: 70%;
-        margin: 0 auto; }
-      #landing-hairs .card .card-content div h2 {
-        font-size: 2rem;
-        margin-top: 1rem; }
-    #landing-hairs .card .card-image img {
-      padding: .4rem;
-      border-radius: .75rem; }
+  #landing-hairs .columns {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto; }
+    #landing-hairs .columns .column .card {
+      background-color: transparent;
+      box-shadow: none; }
+      #landing-hairs .columns .column .card hr {
+        width: 1%;
+        visibility: hidden; }
+      #landing-hairs .columns .column .card .card-content {
+        padding: 1rem; }
+        #landing-hairs .columns .column .card .card-content div h1, #landing-hairs .columns .column .card .card-content div h2 {
+          color: white; }
+        #landing-hairs .columns .column .card .card-content div h1 {
+          font-size: 1rem;
+          text-transform: uppercase;
+          border-radius: 5%;
+          background-color: #DCB879;
+          padding: 5px;
+          width: 70%;
+          margin: 0 auto; }
+        #landing-hairs .columns .column .card .card-content div h2 {
+          font-size: 2rem;
+          margin-top: 1rem; }
+      #landing-hairs .columns .column .card .card-image figure {
+        padding-top: 100%; }
+      #landing-hairs .columns .column .card .card-image img {
+        padding: 0rem;
+        border-radius: .75rem; }
+    #landing-hairs .columns .column:hover {
+      background-color: #535353;
+      -webkit-transition: all 0.3s ease-in;
+      -moz-transition: all 0.3s ease-in;
+      -ms-transition: all 0.3s ease-in;
+      -o-transition: all 0.3s ease-in;
+      transition: all 0.3s ease-in; }
+      #landing-hairs .columns .column:hover hr {
+        margin: 0 auto;
+        width: 100%;
+        visibility: visible;
+        -webkit-transition: all 0.5s linear;
+        -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+        transition: all 0.5s linear; }
 
 #landing-offers {
   padding: 3rem 1rem;
-  background-color: #333333;
+  background-color: #535353;
   color: white; }
   #landing-offers h1 {
     text-align: center;
