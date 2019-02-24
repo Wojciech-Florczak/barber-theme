@@ -135,7 +135,8 @@ body {
         margin: 0 38% !important; } }
     .navbar .navbar-menu .navbar-item {
       color: white;
-      background-color: #535353; }
+      background-color: #535353;
+      border-right: 1px solid #494848; }
       .navbar .navbar-menu .navbar-item:hover {
         color: #DCB879;
         -webkit-transition: all 0.7s ease;
@@ -152,7 +153,7 @@ body {
   border-radius: 50%; }
   @media (max-width: 767px) {
     .section {
-      padding: 0.6rem; } }
+      padding: 0.8rem; } }
   @media (min-width: 768px) {
     .section {
       padding: 0.8rem; } }

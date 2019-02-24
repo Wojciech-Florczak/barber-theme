@@ -27,7 +27,7 @@ body {
         .navbar-item {
             color: white;
             background-color: $gray-color;
-            // border-right: 1px solid #494848;
+            border-right: 1px solid #494848;
             &:hover {
                 color: $gold-color;
                 @include transition (all, 0.7s, ease)
@@ -44,7 +44,7 @@ body {
 .section {
     border-radius: 50%;
     @include breakpoint(xs){
-        padding: 0.6rem;
+        padding: 0.8rem;
     }
     @include breakpoint(sm){
         padding: 0.8rem;
