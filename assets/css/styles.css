@@ -157,9 +157,6 @@ body {
   .navbar .current {
     color: #DCB879 !important; }
 
-@media (max-width: 767px) {
-  .section {
-    padding: 0rem; } }
 @media (min-width: 768px) {
   .section {
     padding: 0.3rem; } }
