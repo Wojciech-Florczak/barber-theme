@@ -1,207 +1,101 @@
-#landing-content {
-  background-color: #535353;
-  color: white; }
-  #landing-content img {
-    border-radius: 1%;
-    padding: 1rem;
-    width: 100%; }
-  #landing-content div.column.is-5 h1 {
-    font-weight: 500;
-    font-size: 1.6rem;
-    text-transform: uppercase; }
-  #landing-content div.column.is-5 p {
-    font-size: 0.8rem;
-    padding-top: 1rem; }
+/*
+Error: Mixin breakpoint is missing argument $point.
+        on line 47 of sass/styles.scss, in `breakpoint'
+        from line 47 of sass/styles.scss
 
-#landing-hairs {
-  background-color: #BEBEBE; }
-  #landing-hairs .columns {
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0 auto; }
-    #landing-hairs .columns .column .card {
-      background-color: transparent;
-      box-shadow: none; }
-      #landing-hairs .columns .column .card hr {
-        width: 1%;
-        visibility: hidden; }
-      #landing-hairs .columns .column .card .card-content {
-        padding: 1rem; }
-        #landing-hairs .columns .column .card .card-content div h1, #landing-hairs .columns .column .card .card-content div h2 {
-          color: white; }
-        #landing-hairs .columns .column .card .card-content div h1 {
-          font-size: 1rem;
-          text-transform: uppercase;
-          border-radius: 5%;
-          background-color: #DCB879;
-          padding: 5px;
-          width: 70%;
-          margin: 0 auto; }
-        #landing-hairs .columns .column .card .card-content div h2 {
-          font-size: 2rem;
-          margin-top: 1rem; }
-      #landing-hairs .columns .column .card .card-image figure {
-        padding-top: 100%; }
-      #landing-hairs .columns .column .card .card-image img {
-        padding: 0rem;
-        border-radius: .75rem; }
-    #landing-hairs .columns .column:hover {
-      background-color: #535353;
-      -webkit-transition: all 0.3s ease-in;
-      -moz-transition: all 0.3s ease-in;
-      -ms-transition: all 0.3s ease-in;
-      -o-transition: all 0.3s ease-in;
-      transition: all 0.3s ease-in; }
-      #landing-hairs .columns .column:hover hr {
-        margin: 0 auto;
-        width: 100%;
-        visibility: visible;
-        -webkit-transition: all 0.5s linear;
-        -moz-transition: all 0.5s linear;
-        -ms-transition: all 0.5s linear;
-        -o-transition: all 0.5s linear;
-        transition: all 0.5s linear; }
+42:                 @include transition (all, 0.7s, ease)
+43:             }
+44:             &:last-of-type {
+45:                 border-right: none;
+46:             }
+47:             @include breakpoint
+48:         }
+49:     }
+50:     .current {
+51:         color: $gold-color !important;
+52:     }
 
-#landing-offers {
-  padding: 3rem 1rem;
-  background-color: #535353;
-  color: white; }
-  #landing-offers h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    padding-bottom: 1.5rem; }
-  #landing-offers p {
-    color: white; }
-    #landing-offers p.heading {
-      text-transform: capitalize;
-      font-size: 1rem; }
-    #landing-offers p.title {
-      font-size: 1.5rem; }
-  #landing-offers img {
-    max-width: 5rem;
-    max-height: 5rem;
-    padding-bottom: 1rem; }
-  #landing-offers nav {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around; }
-
-#landing-welcome {
-  padding: 3rem 1rem;
-  background-color: white;
-  text-align: center; }
-  #landing-welcome h1 {
-    font-size: 2.5rem;
-    color: #DCB879; }
-  @media (max-width: 767px) {
-    #landing-welcome #welcome div:nth-child(1) {
-      order: 2; } }
-  #landing-welcome #welcome .is-6:nth-child(2) {
-    padding-top: 5rem; }
-    #landing-welcome #welcome .is-6:nth-child(2) h1 {
-      padding-bottom: .75rem; }
-    #landing-welcome #welcome .is-6:nth-child(2) p {
-      padding-bottom: 1rem; }
-    #landing-welcome #welcome .is-6:nth-child(2) a:hover {
-      background-color: #DCB879;
-      -webkit-transition: all 0.6s ease;
-      -moz-transition: all 0.6s ease;
-      -ms-transition: all 0.6s ease;
-      -o-transition: all 0.6s ease;
-      transition: all 0.6s ease; }
-    @media (max-width: 767px) {
-      #landing-welcome #welcome .is-6:nth-child(2) {
-        padding: 1rem; } }
-  @media (max-width: 767px) {
-    #landing-welcome #welcome {
-      display: flex;
-      flex-direction: column; } }
-
-#landing-sm {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  padding: 3rem 1rem;
-  background-color: #535353;
-  font-size: 1.7rem;
-  color: white;
-  text-align: center; }
-  #landing-sm h1 {
-    padding-right: 1rem; }
-  #landing-sm a {
-    color: #535353;
-    background-color: #DCB879;
-    width: 2.5rem;
-    border-radius: 50%;
-    margin-right: .75rem;
-    text-decoration: none; }
-    #landing-sm a:hover {
-      text-decoration: none; }
-
-html, body {
-  width: 100%; }
-
-body {
-  background-image: url("../images/fancy-cushion.png"); }
-
-.hero {
-  background-color: #333333; }
-
-.navbar {
-  background-color: #535353; }
-  .navbar .navbar-burger {
-    color: #DCB879; }
-  .navbar .navbar-menu {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: #535353; }
-    @media (min-width: 1216px) {
-      .navbar .navbar-menu {
-        margin: 0 38% !important; } }
-    .navbar .navbar-menu .navbar-item {
-      color: white;
-      background-color: #535353;
-      border-right: 1px solid #494848; }
-      .navbar .navbar-menu .navbar-item:hover {
-        color: #DCB879;
-        -webkit-transition: all 0.7s ease;
-        -moz-transition: all 0.7s ease;
-        -ms-transition: all 0.7s ease;
-        -o-transition: all 0.7s ease;
-        transition: all 0.7s ease; }
-      .navbar .navbar-menu .navbar-item:last-of-type {
-        border-right: none; }
-  .navbar .current {
-    color: #DCB879 !important; }
-
-.section {
-  border-radius: 50%; }
-  @media (max-width: 767px) {
-    .section {
-      padding: 0.8rem; } }
-  @media (min-width: 768px) {
-    .section {
-      padding: 0.8rem; } }
-
-#footer {
-  background-color: #333333;
-  color: white;
-  text-align: center; }
-  #footer h1 {
-    color: #DCB879;
-    font-size: 1.3rem;
-    padding-bottom: .75rem; }
-  #footer p {
-    font-size: 1rem; }
-  #footer h3 {
-    padding-bottom: 1rem; }
-  #footer hr {
-    border: 1px solid #535353;
-    margin-bottom: 1rem; }
-  #footer .columns .column {
-    padding-top: 2rem;
-    padding-bottom: .75rem;
-    padding-left: 2rem;
-    padding-right: 2rem; }
-
-/*# sourceMappingURL=styles.css.map */
+Backtrace:
+sass/styles.scss:47:in `breakpoint'
+sass/styles.scss:47
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:73:in `block in perform_arguments'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:65:in `zip'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:65:in `perform_arguments'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:361:in `block in visit_mixin'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:98:in `block in with_mixin'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:98:in `with_mixin'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:349:in `visit_mixin'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:168:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:188:in `visit_root'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:159:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:8:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:36:in `css_tree'
+/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:473:in `on_file_changed'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:331:in `block in watch'
+/usr/lib/ruby/vendor_ruby/listen/event/config.rb:23:in `call'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:115:in `_process_changes'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:19:in `block in loop_for'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop_for'
+/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:84:in `_wait_for_changes'
+/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:42:in `block in setup'
+/usr/lib/ruby/vendor_ruby/listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Mixin breakpoint is missing argument $point.\A         on line 47 of sass/styles.scss, in `breakpoint'\A         from line 47 of sass/styles.scss\A \A 42:                 @include transition (all, 0.7s, ease)\A 43:             }\A 44:             &:last-of-type {\A 45:                 border-right: none;\A 46:             }\A 47:             @include breakpoint\A 48:         }\A 49:     }\A 50:     .current {\A 51:         color: $gold-color !important;\A 52:     }"; }

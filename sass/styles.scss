@@ -4,9 +4,16 @@
 
 html, body {
     width: 100%;
+    font-family: 'Dosis', sans-serif;
+}
+html {
+    font-size: 18px;
 }
 body {
     background-image: url("../images/fancy-cushion.png");
+    h1 {
+        font-family: 'Open Sans', sans-serif;
+    }
 }
 
 .hero {
@@ -19,10 +26,12 @@ body {
     }
     .navbar-menu {
         padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding-bottom: 0rem;
         background-color: $gray-color;
         @include breakpoint(lg) {
-            margin: 0 38% !important;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto !important;
         }
         .navbar-item {
             color: white;
@@ -35,6 +44,7 @@ body {
             &:last-of-type {
                 border-right: none;
             }
+            @include breakpoint
         }
     }
     .current {
