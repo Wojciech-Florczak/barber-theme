@@ -114,18 +114,10 @@
       text-decoration: none; }
 
 html, body {
-  width: 100vw;
-  height: 100vh; }
+  width: 100%; }
 
 body {
-  background-image: url("../images/background.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
-  height: 100%;
-  width: 100%;
-  min-height: 100vh;
-  min-width: 100vw; }
+  background-image: url("../images/fancy-cushion.png"); }
 
 .hero {
   background-color: #333333; }
@@ -157,9 +149,14 @@ body {
   .navbar .current {
     color: #DCB879 !important; }
 
-@media (min-width: 768px) {
-  .section {
-    padding: 0.3rem; } }
+.section {
+  border-radius: 50%; }
+  @media (max-width: 767px) {
+    .section {
+      padding: 0.6rem; } }
+  @media (min-width: 768px) {
+    .section {
+      padding: 0.8rem; } }
 
 #footer {
   background-color: #333333;
