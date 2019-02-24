@@ -44,7 +44,6 @@ body {
             &:last-of-type {
                 border-right: none;
             }
-            @include breakpoint
         }
     }
     .current {
