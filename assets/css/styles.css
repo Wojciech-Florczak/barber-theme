@@ -2,23 +2,34 @@
   display: flex;
   background-color: #535353;
   color: white; }
+  @media (max-width: 768px) {
+    #landing-content .columns .column.is-7 {
+      order: 1; }
+      #landing-content .columns .column.is-7 img {
+        padding: 0rem; } }
+  #landing-content .columns .column.is-5 {
+    font-style: italic; }
+    #landing-content .columns .column.is-5 h1 {
+      font-weight: 600;
+      font-size: 1.6rem;
+      text-transform: uppercase; }
+      @media (max-width: 768px) {
+        #landing-content .columns .column.is-5 h1 {
+          text-align: center; } }
+    #landing-content .columns .column.is-5 p {
+      font-size: 1rem;
+      padding-top: 1rem; }
+      @media (max-width: 768px) {
+        #landing-content .columns .column.is-5 p {
+          padding: 0.5rem .75rem; } }
+  @media (max-width: 768px) {
+    #landing-content .columns {
+      display: flex;
+      flex-flow: column wrap; } }
   #landing-content img {
     border-radius: 1%;
     padding: 1rem;
     width: 100%; }
-  @media (max-width: 768px) {
-    #landing-content div.column.is-7 img {
-      padding: 0rem; } }
-  #landing-content div.column.is-5 h1 {
-    font-weight: 500;
-    font-size: 1.6rem;
-    text-transform: uppercase; }
-    @media (max-width: 768px) {
-      #landing-content div.column.is-5 h1 {
-        text-align: center; } }
-  #landing-content div.column.is-5 p {
-    font-size: 0.8rem;
-    padding-top: 1rem; }
 
 #landing-hairs {
   background-color: #BEBEBE; }
@@ -38,15 +49,29 @@
           color: white; }
         #landing-hairs .columns .column .card .card-content div h1 {
           font-size: 1rem;
+          font-family: 'Dosis', sans-serif;
+          font-weight: 600;
+          color: white;
           text-transform: uppercase;
           border-radius: 5%;
           background-color: #DCB879;
           padding: 5px;
           width: 70%;
           margin: 0 auto; }
+          @media (max-width: 768px) {
+            #landing-hairs .columns .column .card .card-content div h1 {
+              width: 100%; } }
+          @media (min-width: 769px) {
+            #landing-hairs .columns .column .card .card-content div h1 {
+              width: 100%;
+              font-weight: 500; } }
         #landing-hairs .columns .column .card .card-content div h2 {
           font-size: 2rem;
           margin-top: 1rem; }
+          @media (max-width: 768px) {
+            #landing-hairs .columns .column .card .card-content div h2 {
+              width: 100%;
+              font-size: 1.6rem; } }
       #landing-hairs .columns .column .card .card-image figure {
         padding-top: 100%; }
       #landing-hairs .columns .column .card .card-image img {
@@ -99,9 +124,15 @@
   text-align: center; }
   #landing-welcome h1 {
     font-size: 2.5rem;
+    font-weight: 600;
     color: #DCB879; }
+  #landing-welcome p {
+    font-style: italic; }
   @media (max-width: 768px) {
-    #landing-welcome #welcome div:nth-child(1) {
+    #landing-welcome #welcome .is-6:nth-child(1) {
+      order: 2; } }
+  @media (min-width: 769px) {
+    #landing-welcome #welcome .is-6:nth-child(1) {
       order: 2; } }
   #landing-welcome #welcome .is-6:nth-child(2) {
     padding-top: 5rem; }
@@ -119,10 +150,16 @@
     @media (max-width: 768px) {
       #landing-welcome #welcome .is-6:nth-child(2) {
         padding: 1rem; } }
+    @media (min-width: 769px) {
+      #landing-welcome #welcome .is-6:nth-child(2) {
+        padding-top: .5rem; } }
   @media (max-width: 768px) {
     #landing-welcome #welcome {
       display: flex;
       flex-direction: column; } }
+  @media (max-width: 768px) {
+    #landing-welcome {
+      padding-top: 1rem; } }
 
 #landing-sm {
   display: flex;
@@ -168,7 +205,7 @@ body {
     padding-top: 1rem;
     padding-bottom: 0rem;
     background-color: #535353; }
-    @media (min-width: 1216px) {
+    @media (min-width: 1088px) {
       .navbar .navbar-menu {
         display: flex;
         justify-content: center;

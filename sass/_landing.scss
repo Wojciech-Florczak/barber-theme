@@ -2,32 +2,48 @@
     display: flex;
     background-color: $gray-color;
     color: white;
+    .columns {
+        // Image
+        .column.is-7 {
+            @include breakpoint (xs){
+                order: 1;
+                img {
+                    padding: 0rem;
+                }
+            }
+        }
+        // Text
+        .column.is-5 {
+            font-style: italic;
+            h1 {
+                font-weight: 600;
+                font-size: 1.6rem;
+                text-transform: uppercase;
+                @include breakpoint (xs){
+                    text-align: center;
+                }
+            }
+            p {
+                font-size: 1rem;
+                padding-top: 1rem;
+                @include breakpoint(xs) {
+                    padding: 0.5rem .75rem;
+                    
+                }
+            }
+        }
+        @include breakpoint (xs){
+            display: flex;
+            flex-flow: column wrap;
+        }
+    }
     img {
         border-radius: 1%;
         padding: 1rem;
         width: 100%;
     }
-    div.column.is-7 {
-        @include breakpoint (xs){
-            img {
-                padding: 0rem;
-            }
-        }
-    }
-    div.column.is-5 {
-        h1 {
-            font-weight: 500;
-            font-size: 1.6rem;
-            text-transform: uppercase;
-            @include breakpoint (xs){
-                text-align: center;
-            }
-        }
-        p {
-            font-size: 0.8rem;
-            padding-top: 1rem;
-        }
-    }
+
+
 }
 #landing-hairs {
     background-color: #BEBEBE;
@@ -51,16 +67,32 @@
                         }
                         h1 {
                             font-size: 1rem;
+                            font-family: 'Dosis', sans-serif;
+                            font-weight: 600;
+                            color: white;
                             text-transform: uppercase;
                             border-radius: 5%;
                             background-color: $gold-color;
                             padding: 5px;
                             width: 70%;
                             margin: 0 auto;
+                            @include breakpoint(xs){
+                                width: 100%;
+                                // font-size: .75rem;
+                            }
+                            @include breakpoint(sm){
+                                width: 100%;
+                                font-weight: 500;
+                                
+                            }
                         }
                         h2 {
                             font-size: 2rem;
                             margin-top: 1rem;
+                            @include breakpoint(xs){
+                                width: 100%;
+                                font-size: 1.6rem;
+                            }
                         }
                     }
                 }
@@ -123,15 +155,22 @@
     text-align: center;
     h1 {
         font-size: 2.5rem;
+        font-weight: 600;
         color: $gold-color;
     }
+    p {
+        font-style: italic;
+    }
     #welcome {
-        div:nth-child(1){
-            @include breakpoint(xs){
-                order: 2;
-            }
-        }
         .is-6 {
+            &:nth-child(1){
+                @include breakpoint(xs){
+                    order: 2;
+                }
+                @include breakpoint(sm){
+                    order: 2;
+                }
+            }
             &:nth-child(2){
                 padding-top: 5rem;
                 h1 {
@@ -149,12 +188,19 @@
                 @include breakpoint(xs){
                     padding: 1rem;
                 }
+                @include breakpoint(sm){
+                    padding-top: .5rem;
+                    // width: 100%;
+                }
             }
         }
         @include breakpoint(xs){
             display: flex;
             flex-direction: column;
         }
+    }
+    @include breakpoint(xs){
+        padding-top: 1rem;
     }
 }
 #landing-sm {

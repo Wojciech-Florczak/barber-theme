@@ -28,7 +28,7 @@ body {
         padding-top: 1rem;
         padding-bottom: 0rem;
         background-color: $gray-color;
-        @include breakpoint(lg) {
+        @include breakpoint(md) {
             display: flex;
             justify-content: center;
             margin: 0 auto !important;
