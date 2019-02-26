@@ -162,7 +162,7 @@
         font-style: italic;
     }
     #welcome {
-        .is-6 {
+        .column {
             &:nth-child(1){
                 @include breakpoint(xs){
                     order: 2;
@@ -197,6 +197,14 @@
         @include breakpoint(xs){
             display: flex;
             flex-direction: column;
+        }
+        @include breakpoint(sm){
+            display: flex;
+            flex-direction: column;
+        }
+        @include breakpoint(lg){
+            display: flex;
+            flex-direction: row;
         }
     }
     @include breakpoint(xs){
