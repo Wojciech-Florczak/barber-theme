@@ -3,30 +3,64 @@
     background-color: $black-color;
     color: white;
     .columns {
-        #ad-1 {
-            img {
+        .column.is-3 {
+            #adv-1 {
                 width: 100%;
+                max-height: 60vh;
             }
-        }
-        #ad-2 {
-            background-color: $gold-color;
-            width: 100%;
-            height: 12rem;
-            display:flex;
-            align-items: center;
-            justify-content: center;
-            h1{
-                font-size: 2rem;
-                font-weight: 600;
-                text-align: center;
+            #adv-2 {
+                background-color: $gold-color;
+                padding: .5rem;
+                width: 100%;
+                height: 12rem;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                @include breakpoint(xs) {
+                    min-height: 50vh;
+                }
+                h1{
+                    font-size: 2rem;
+                    font-weight: 600;
+                    text-align: center;
+                    @include breakpoint(sm) {
+                        font-size: 1.6rem;
+                    }
+                    @include breakpoint(xs) {
+                        font-size: 3rem;
+                    }
+                }
             }
-        }
-        
+            @include breakpoint(xs) {
+                order: 2;
+            }
+        }        
         .column {
             .offer-card {
                 display: flex;
                 h1 {
                     text-align: left;
+                }
+                img {
+                    background-color: white;
+                }
+                .column {
+                    // Thumbnail
+                    &:nth-child(1) {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    // Text
+                    &:nth-child(2){
+                        h1 {
+                            text-align: left;
+                            font-size: 1.2rem;
+                        }
+                        h2 {
+                            font-size: 0.8rem;
+                        }
+                    }
                 }
             }
             &:nth-child(2){
@@ -39,6 +73,13 @@
                     text-align: center;
                 }
             }
+
+        }
+    }
+    #offer-cols {
+        @include breakpoint(xs){
+            display: flex;
+            flex-direction: column;
         }
     }
     
