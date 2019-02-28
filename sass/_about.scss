@@ -1,0 +1,65 @@
+#about {
+    background-color: white;
+    .columns {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 1rem;
+        .column {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            max-height: 40vh;
+            h1 {
+                font-size: 1.8rem;
+                font-weight: 600;
+                padding-bottom: .75rem;
+            }
+            h2 {
+                font-size: 1.8rem;
+                font-weight: 600;
+                color: $gold-color;
+                padding-bottom: .75rem;
+                font-style: italic;
+                
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            .image {
+                display: flex;
+                width: 100%;
+                img {
+                    max-height: 50vh;
+                    @include breakpoint(xs) {
+                        max-height: 60vh;
+                    }
+                }
+            }
+            @include breakpoint(xs){
+                flex: none;
+                width: 100%;
+                margin-bottom: 2%;
+            }
+            @include breakpoint(sm){
+                flex: none;
+                width: 48%;
+                margin: 1%;
+            }
+            @include breakpoint(lg){
+                flex: none;
+                width: 23%;
+                margin: 1%;
+            }
+        }
+        // Containers with numbers
+        .big-nums {
+            justify-content: flex-end;
+            h3 {
+                font-size: 4rem;
+                color: $gold-color;
+            }
+        }
+    }
+}

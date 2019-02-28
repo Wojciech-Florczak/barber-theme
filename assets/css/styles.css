@@ -247,6 +247,60 @@
       display: flex;
       flex-direction: column; } }
 
+#about {
+  background-color: white; }
+  #about .columns {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 1rem; }
+    #about .columns .column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      max-height: 40vh; }
+      #about .columns .column h1 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        padding-bottom: .75rem; }
+      #about .columns .column h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #DCB879;
+        padding-bottom: .75rem;
+        font-style: italic; }
+      #about .columns .column p {
+        font-size: 0.9rem; }
+      #about .columns .column .image {
+        display: flex;
+        width: 100%; }
+        #about .columns .column .image img {
+          max-height: 50vh; }
+          @media (max-width: 768px) {
+            #about .columns .column .image img {
+              max-height: 60vh; } }
+      @media (max-width: 768px) {
+        #about .columns .column {
+          flex: none;
+          width: 100%;
+          margin-bottom: 2%; } }
+      @media (min-width: 769px) {
+        #about .columns .column {
+          flex: none;
+          width: 48%;
+          margin: 1%; } }
+      @media (min-width: 1216px) {
+        #about .columns .column {
+          flex: none;
+          width: 23%;
+          margin: 1%; } }
+    #about .columns .big-nums {
+      justify-content: flex-end; }
+      #about .columns .big-nums h3 {
+        font-size: 4rem;
+        color: #DCB879; }
+
 html, body {
   width: 100%;
   font-family: 'Dosis', sans-serif; }
