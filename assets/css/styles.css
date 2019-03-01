@@ -301,6 +301,54 @@
         font-size: 4rem;
         color: #DCB879; }
 
+#contact {
+  background-color: white;
+  color: black;
+  text-align: center; }
+  #contact h1 {
+    font-size: 2rem;
+    font-weight: 600; }
+  #contact p {
+    font-size: 0.9rem; }
+  #contact iframe {
+    width: 100%;
+    height: 550px; }
+  #contact #map {
+    width: 100%; }
+    #contact #map iframe {
+      width: 100%;
+      height: 600; }
+  #contact #informations .column:nth-child(1) {
+    padding: 3rem 2rem; }
+    #contact #informations .column:nth-child(1) h1 {
+      padding-bottom: 1rem; }
+    #contact #informations .column:nth-child(1) #info-cols {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      padding-top: 2.5rem;
+      width: 100%; }
+      #contact #informations .column:nth-child(1) #info-cols .column {
+        padding-top: 1rem;
+        text-align: center; }
+        #contact #informations .column:nth-child(1) #info-cols .column i {
+          padding: 1rem;
+          font-size: 4rem;
+          color: #DCB879;
+          border: 1px solid gray;
+          border-radius: 50%; }
+        #contact #informations .column:nth-child(1) #info-cols .column h2 {
+          font-size: 1.5rem;
+          font-weight: 600; }
+        #contact #informations .column:nth-child(1) #info-cols .column h3 {
+          font-size: 0.9rem;
+          line-height: 1.75rem; }
+      @media (max-width: 768px) {
+        #contact #informations .column:nth-child(1) #info-cols {
+          width: inherit; } }
+  #contact #informations .column:nth-child(2) {
+    padding: 2rem; }
+
 html, body {
   width: 100%;
   font-family: 'Dosis', sans-serif; }
