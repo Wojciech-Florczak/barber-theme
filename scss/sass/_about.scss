@@ -36,10 +36,14 @@
                         max-height: 60vh;
                     }
                 }
+                @include breakpoint(xs){
+                    height: 60vh;
+                }
             }
             @include breakpoint(xs){
                 flex: none;
                 width: 100%;
+                max-height: 70vh;
                 margin-bottom: 2%;
             }
             @include breakpoint(sm){
