@@ -1,0 +1,243 @@
+#landing-content {
+  display: flex;
+  background-color: $gray-color;
+  color: white;
+  .columns {
+    // Image
+    .column.is-7 {
+      @include breakpoint(xs) {
+        order: 1;
+        img {
+          padding: 0rem;
+        }
+      }
+    }
+    // Text
+    .column.is-5 {
+      font-style: italic;
+      h1 {
+        font-weight: 600;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        @include breakpoint(xs) {
+          text-align: center;
+        }
+      }
+      p {
+        font-size: 1rem;
+        padding-top: 1rem;
+        @include breakpoint(xs) {
+          padding: 0.5rem 0.75rem;
+        }
+      }
+    }
+    @include breakpoint(xs) {
+      display: flex;
+      flex-flow: column wrap;
+    }
+  }
+  img {
+    border-radius: 1%;
+    padding: 1rem;
+    width: 100%;
+  }
+}
+#landing-hairs {
+  background-color: #bebebe;
+  .columns {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    .column {
+      .card {
+        background-color: transparent;
+        box-shadow: none;
+        hr {
+          width: 1%;
+          visibility: hidden;
+        }
+        .card-content {
+          padding: 1rem;
+          div {
+            h1,
+            h2 {
+              color: white;
+            }
+            h1 {
+              font-size: 1rem;
+              font-family: "Dosis", sans-serif;
+              font-weight: 600;
+              color: white;
+              text-transform: uppercase;
+              border-radius: 5%;
+              background-color: $gold-color;
+              padding: 5px;
+              width: 70%;
+              margin: 0 auto;
+              @include breakpoint(xs) {
+                width: 100%;
+                // font-size: .75rem;
+              }
+              @include breakpoint(sm) {
+                width: 100%;
+                font-weight: 500;
+              }
+            }
+            h2 {
+              font-size: 2rem;
+              margin-top: 1rem;
+              @include breakpoint(xs) {
+                width: 100%;
+                font-size: 1.6rem;
+              }
+            }
+          }
+        }
+        .card-image {
+          figure {
+            padding-top: 100%;
+          }
+          img {
+            padding: 0rem;
+            border-radius: 0.75rem;
+          }
+        }
+      }
+      &:hover {
+        background-color: $gray-color;
+        hr {
+          margin: 0 auto;
+          width: 100%;
+          visibility: visible;
+          @include transition(all, 0.5s, linear);
+        }
+        @include transition(all, 0.3s, ease-in);
+      }
+    }
+  }
+}
+#landing-offers {
+  padding: 3rem 1rem;
+  background-color: $gray-color;
+  color: white;
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 1.5rem;
+  }
+  p {
+    color: white;
+    &.heading {
+      text-transform: capitalize;
+      font-size: 1rem;
+    }
+    &.title {
+      font-size: 1.5rem;
+    }
+  }
+  img {
+    max-width: 5rem;
+    max-height: 5rem;
+    padding-bottom: 1rem;
+  }
+  nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+}
+#landing-welcome {
+  padding: 3rem 1rem;
+  background-color: white;
+  text-align: center;
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: $gold-color;
+  }
+  p {
+    font-style: italic;
+  }
+  #welcome {
+    display: flex;
+    flex-flow: row wrap;
+    // Gallery
+    .column.is-7 {
+      order: 1;
+      .columns {
+        display: flex;
+        flex-flow: row wrap;
+        .column {
+          @include breakpoint(xs) {
+            flex: none;
+            width: 50%;
+          }
+          @include breakpoint(sm) {
+            flex: none;
+            width: 33.3%;
+          }
+          @include breakpoint(md) {
+            flex: none;
+            width: 33.3%;
+          }
+        }
+      }
+      @include breakpoint(sm){
+          width: 100%;
+      }
+      @include breakpoint(md){
+        width: 58.33%;
+    }
+    }
+    // Tekst
+    .column.is-5 {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      h1,
+      p {
+        padding-bottom: 1rem;
+      }
+      @include breakpoint(xs) {
+        flex: none;
+        width: 100%;
+      }
+      @include breakpoint(sm) {
+          flex: none;
+          width: 100%;
+      }
+      @include breakpoint(md) {
+          width: 41.66%;
+      }
+    }
+  }
+  @include breakpoint(xs) {
+    padding-top: 1rem;
+  }
+}
+#landing-sm {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 3rem 1rem;
+  background-color: $gray-color;
+  font-size: 1.7rem;
+  color: white;
+  text-align: center;
+  h1 {
+    padding-right: 1rem;
+  }
+  a {
+    color: $gray-color;
+    background-color: $gold-color;
+    width: 2.5rem;
+    border-radius: 50%;
+    margin-right: 0.75rem;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
