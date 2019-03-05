@@ -49,6 +49,7 @@
             @include breakpoint(sm){
                 flex: none;
                 width: 48%;
+                max-height: 60vh;
                 margin: 1%;
             }
             @include breakpoint(lg){
